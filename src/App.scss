@@ -1,0 +1,16 @@
+.app {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+  .header {
+    height: 60px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    background-color: #f6f6f7;
+  }
+  .section {
+    padding-top: 30px;
+  }
+}

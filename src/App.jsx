@@ -20,14 +20,16 @@ const App = () => {
       ) => (
         <div className="app">
           <div className="header">
-            <div className="items">
+            <div className="buttonContainer">
             <MyCartButton
             cartCounter={cartCounter}
             toggleCartVisibility={toggleCartVisibility}
           />
             </div>
-
+          <div className="cartItems">
           {cartItems.length > 0 && <MyCart cartItems={cartItems} />}
+          </div>
+
           </div>
           <div className="section">
           <ProductDetails 
