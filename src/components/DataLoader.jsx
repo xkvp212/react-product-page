@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const DataLoader = ({ children }) => {
+export default function DataLoader ({ children }) {
   const [jsonData, setJsonData] = useState(null);
   const [selectedSize, setSelectedSize] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -86,4 +86,3 @@ const DataLoader = ({ children }) => {
   );
 };
 
-export default DataLoader;

@@ -1,6 +1,6 @@
 import SizeOptions from "./SizeOptions";
 import AddToCartButton from "./AddToCartButton";
-
+import "./productdetails.scss"
 export default function ProductDetails({
     jsonData, 
     selectedSize, 
@@ -10,14 +10,14 @@ export default function ProductDetails({
     return(    
     <div class="main-container">
     <div class="left-container">
-      <div class="content">
+      <div class="image-container">
         <img src={jsonData.imageURL} alt={jsonData.title}></img>
       </div>
     </div>
     <div class="right-container">
-      <div class="content">
+      <div class="content-container">
         <h1>{jsonData.title}</h1>
-        <h2>{jsonData.price}</h2>
+        <h3>${jsonData.price}.00</h3>
         <p>{jsonData.description}</p>
         <SizeOptions
             jsonData={jsonData}

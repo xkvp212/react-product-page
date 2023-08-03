@@ -1,0 +1,29 @@
+.container {
+  font: sans-serif;
+  h2 {
+    .sizeGrey {
+      color: #888888;
+    }
+    .amperRed {
+      color: #c90000;
+    }
+  }
+  button {
+    background-color: white;
+    border-radius: 0;
+    border: 3px solid;
+    border-color: #222222;
+    font: 700 1em sans-serif;
+    transition: 0.2 s;
+    padding: 10px 24px;
+    font: #222222;
+
+    &:hover {
+      background-color: #222222;
+      border: 3px solid;
+      border-radius: 0;
+      border-color: #222222;
+      color: #fff;
+    }
+  }
+}
