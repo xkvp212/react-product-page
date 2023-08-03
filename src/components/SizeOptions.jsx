@@ -1,8 +1,9 @@
 import React from "react";
+import "./sizeoptions.scss";
 
 const SizeOptions = ({ jsonData, selectedSize, handleSizeChange }) => {
   return (
-    <div>
+    <div className="sizeOptionsContainer">
       {jsonData &&
         jsonData.sizeOptions.map(option => (
           <label key={option.id}>

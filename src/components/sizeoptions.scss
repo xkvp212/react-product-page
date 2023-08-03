@@ -1,0 +1,20 @@
+.sizeOptionsContainer {
+  display: flex;
+  flex-direction: row;
+  /* Customize the radio button appearance */
+  label {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #cccccc;
+    border: 2px solid #cccccc;
+    padding: 5px;
+
+    /* Style the radio button */
+    input[type="radio"] {
+      display: none;
+    }
+  }
+}

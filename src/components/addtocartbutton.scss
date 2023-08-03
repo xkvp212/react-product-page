@@ -1,6 +1,7 @@
 .container {
   font: sans-serif;
   h2 {
+    font-size: 1em;
     .sizeGrey {
       color: #888888;
     }
@@ -24,6 +25,7 @@
       border-radius: 0;
       border-color: #222222;
       color: #fff;
+      cursor: pointer;
     }
   }
 }

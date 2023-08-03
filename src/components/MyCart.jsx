@@ -1,22 +1,16 @@
-import React from "react";
+import "./mycart.scss"
 
-const MyCart = ({ cartItems }) => {
+export default function MyCart ({ cartItems }){
   return (
-    <div>
+    <div className="cartItemsContainer">
       <ul>
         {cartItems.map((item, index) => (
           <li
             key={index}
-            style={{
-              width: "100px",
-              marginRight: "10px",
-              listStyleType: "none"
-            }}
           >
             <img
               src={item.imageURL}
               alt={item.title}
-              style={{ width: "50px", marginRight: "10px" }}
             />
             {item.title} Size: {item.size} Quantity: {item.quantity}
           </li>
@@ -26,4 +20,3 @@ const MyCart = ({ cartItems }) => {
   );
 };
 
-export default MyCart;
