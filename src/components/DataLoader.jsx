@@ -66,7 +66,8 @@ export default function DataLoader ({ children }) {
   };
 
   const toggleCartVisibility = () => {
-    setShowCart(!showCart);
+    console.log("toggleCartVisibility is called");
+    setShowCart((prevState) => !prevState);
   };
 
   return (
@@ -80,6 +81,7 @@ export default function DataLoader ({ children }) {
           errorMessage,
           cartItems,
           cartCounter,
+          showCart,
           toggleCartVisibility
         )}
     </React.Fragment>

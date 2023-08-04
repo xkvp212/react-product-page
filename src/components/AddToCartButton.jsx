@@ -1,6 +1,5 @@
 import "./addtocartbutton.scss"
 export default function AddToCartButton ({
-  jsonData,
   selectedSize,
   handleAddToCart,
   errorMessage

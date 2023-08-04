@@ -11,6 +11,7 @@
   }
   .left-container {
     flex: 0 1 50%;
+
     .image-container {
       display: flex;
       flex-wrap: wrap;
@@ -20,6 +21,9 @@
         width: 90%;
         max-width: 400px;
         height: auto;
+        @include mobile {
+          padding-top: 15px;
+        }
       }
     }
   }

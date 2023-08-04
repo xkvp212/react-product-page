@@ -6,6 +6,7 @@ import ProductDetails from "./components/ProductDetails";
 import "./app.scss";
 
 const App = () => {
+  
   return (
     <DataLoader>
       {(
@@ -16,18 +17,20 @@ const App = () => {
         errorMessage,
         cartItems,
         cartCounter,
+        showCart,
         toggleCartVisibility
       ) => (
         <div className="app">
           <div className="header">
-            <div className="buttonContainer">
+            <div className="cartContainer">
             <MyCartButton
-            cartCounter={cartCounter}
-            toggleCartVisibility={toggleCartVisibility}
-          />
+              cartCounter={cartCounter}
+              toggleCartVisibility={toggleCartVisibility}
+            />
+
+            <div className={`cartItems ${showCart ? "visible" : ""}`}>
+              {cartItems.length > 0 && <MyCart cartItems={cartItems} />}
             </div>
-          <div className="cartItems">
-          {cartItems.length > 0 && <MyCart cartItems={cartItems} />}
           </div>
 
           </div>
