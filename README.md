@@ -1,11 +1,5 @@
 # Mobile-friendly React Product Page
 
-<img width="600" alt="Screen Shot 2023-08-04 at 10 30 25 AM" src="https://github.com/xkvp212/react-product-page/assets/42418260/70fcd6dc-b4dd-467d-a8f8-d2e474e5673c"> 
+https://github.com/xkvp212/react-product-page/assets/42418260/db61ce3d-7ba3-4e2c-958d-b4a55dd5bb57
 
-https://github.com/xkvp212/react-product-page/assets/42418260/65424f61-4086-4f40-8323-f7528f10ee7f
-
-
-
-
-
-
+https://github.com/xkvp212/react-product-page/assets/42418260/23f6f7e9-91dd-4525-ae0c-53410469ca0e
