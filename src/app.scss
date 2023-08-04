@@ -1,0 +1,44 @@
+.app {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  .header {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    background-color: #f6f6f7;
+
+    .cartContainer {
+      position: relative;
+      display: inline-block;
+
+      .cartItems {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ccc;
+        display: none;
+        z-index: 1;
+
+        &.visible {
+          display: block;
+        }
+      }
+    }
+
+    &.showCart {
+      .cartItems {
+        display: block;
+      }
+    }
+  }
+
+  .section {
+    padding-top: 30px;
+  }
+}
